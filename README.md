@@ -10,3 +10,4 @@ Codebook:
 6. subjects from test and training sets were merged tohgether and added as a column to the dataset (subject_test.txt and subject_train.txt)
 7. summary of average values of all variables per subject per activity was produced
 8. each resulting line contains averages of all activities per subject per activity
+9. data is saved into a text file called analysis_output.txt
