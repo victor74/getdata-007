@@ -19,4 +19,3 @@ Usage:
 1. put the script in the UCI HAR Dataset directory
 2. change your working dir to UCI HAR Dataset directory
 3. execute script with source("run_analysis.R")
-

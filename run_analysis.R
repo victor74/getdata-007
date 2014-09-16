@@ -27,14 +27,14 @@ names(allDF) <- measNames[,2]
 filteredDF <- allDF[,grep(".*(std|mean).*", names(allDF), value = TRUE)]
 
 allActivityTypes <- rbind(testActivityTypes, trainActivityTypes)
-allDF <- cbind(allActivityTypes, allDF)
+filteredDF <- cbind(allActivityTypes, filteredDF)
 
 allSubjects <- rbind(testSubjects, trainSubjects)
-allDF <- cbind(allSubjects, allDF)
+filteredDF <- cbind(allSubjects, filteredDF)
 
-names(allDF)[1] <- "Subject"
+names(filteredDF)[1] <- "Subject"
 
-completeDF <- merge(activityNames, allDF)
+completeDF <- merge(activityNames, filteredDF)
 
 names(completeDF)[names(completeDF) == "V2"] <- "Activity"
 names(completeDF)[names(completeDF) == "V1"] <- "ActivityType"
