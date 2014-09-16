@@ -15,6 +15,7 @@ Codebook:
 Variables:
 
 The following variables are extracted from source datafiles and gruoped by activity and subject. For grouped data mean value is calculated:
+
 "ActivityType"
 "Activity"                       
 "Subject"
